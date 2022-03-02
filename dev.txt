@@ -1,6 +1,3 @@
 adjfdask
-
-ekdjlopment branch
-merging conflicts
-poll scm example
+ample
 webhook
