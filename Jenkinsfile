@@ -5,7 +5,7 @@ pipeline{
     {
       steps
     {
-      git branch: 'develop', credentialsId: 'github-cred', url: 'https://github.com/Devops4-1/devops.git'
+      checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-cred', url: 'https://github.com/Devops4-1/devops.git']]])
     }
     }
     
