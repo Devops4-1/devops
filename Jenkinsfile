@@ -12,7 +12,7 @@ pipeline{
     stage("devops")
     {
       steps {
-            echo "devops"
+            cleanWs cleanWhenAborted: false, cleanWhenFailure: false, cleanWhenNotBuilt: false, cleanWhenUnstable: false
           }
      }
   }
